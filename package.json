@@ -1,0 +1,35 @@
+{
+  "name": "the-harry-potter-database-server",
+  "version": "0.2.0",
+  "description": "The backend of the Harry Potter DB",
+  "main": "server.js",
+  "author": "David Barton (theDavidBarton)",
+  "repository": "https://github.com/theDavidBarton/the-harry-potter-database",
+  "homepage": "https://github.com/theDavidBarton/the-harry-potter-database#readme",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "codecov": "^3.6.5",
+    "nock": "^12.0.3",
+    "puppeteer": "3.1.0"
+  },
+  "keywords": [
+    "api",
+    "harry potter",
+    "rest",
+    "database"
+  ]
+}
